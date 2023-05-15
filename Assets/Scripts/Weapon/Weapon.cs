@@ -17,9 +17,13 @@ public class Weapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
+        
         sr = GetComponentInChildren<SpriteRenderer>();
+        
         boxCollider = GetComponent<BoxCollider2D>();
+        
 
         boxCollider.enabled = false;
         sr.enabled = false;
